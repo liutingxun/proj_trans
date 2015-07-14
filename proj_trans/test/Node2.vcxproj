@@ -1,0 +1,251 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="12.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\FakeServer.cpp" />
+    <ClCompile Include="..\src\glog\logging.cc" />
+    <ClCompile Include="..\src\glog\port.cc" />
+    <ClCompile Include="..\src\glog\raw_logging.cc" />
+    <ClCompile Include="..\src\glog\utilities.cc" />
+    <ClCompile Include="..\src\glog\vlog_is_on.cc" />
+    <ClCompile Include="..\src\main.cpp" />
+    <ClCompile Include="..\src\net\addr_util.cpp" />
+    <ClCompile Include="..\src\net\file_descriptor.cpp" />
+    <ClCompile Include="..\src\net\ioepoller.cpp" />
+    <ClCompile Include="..\src\net\ioeventhandler.cpp" />
+    <ClCompile Include="..\src\net\ioeventloop.cpp" />
+    <ClCompile Include="..\src\net\ioselector.cpp" />
+    <ClCompile Include="..\src\net\tcpacceptor.cpp" />
+    <ClCompile Include="..\src\net\tcpconnector.cpp" />
+    <ClCompile Include="..\src\net\timerqueue.cpp" />
+    <ClCompile Include="..\src\net\pendingevent.cpp" />
+    <ClCompile Include="..\src\port\pipe.cpp" />
+    <ClCompile Include="..\src\port\windows_env.cpp" />
+    <ClCompile Include="..\src\port\winport.cpp" />
+    <ClCompile Include="..\src\ReadMe.cpp" />
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorCatchupState.cpp" />
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorNormalState.cpp" />
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorNotInGroupState.cpp" />
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorState.cpp" />
+    <ClCompile Include="..\src\server\ClientRequest.cpp" />
+    <ClCompile Include="..\src\server\coding.cpp" />
+    <ClCompile Include="..\src\server\ConsensusModule.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\AcceptorFile.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\AcptrFileRcrdIter.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\DefaultPaxosLog.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\DefaultPaxosLogIterator.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\IndexFile.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\IndexFileRcrdIter.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\IndexFileLogIterator.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\LogFile.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\LogFileRcrdIter.cpp" />
+    <ClCompile Include="..\src\server\DefaultLog\LogFileLogItertaor.cpp" />
+    <ClCompile Include="..\src\server\GlogHelper.cpp" />
+    <ClCompile Include="..\src\server\mempool\QueueLikeMemPool.cpp" />
+    <ClCompile Include="..\src\server\mempool\StackLikeMemPool.cpp" />
+    <ClCompile Include="..\src\server\NodeRequestManager.cpp" />
+    <ClCompile Include="..\src\server\PaxosAcceptor.cpp" />
+    <ClCompile Include="..\src\server\PaxosInnerState.cpp" />
+    <ClCompile Include="..\src\server\PaxosLearner.cpp" />
+    <ClCompile Include="..\src\server\StorageModule.cpp" />
+    <ClCompile Include="..\src\server\PaxosProposer.cpp" />
+    <ClCompile Include="..\src\server\PaxosProposerClientRequest.cpp" />
+    <ClCompile Include="..\src\server\PaxosReplicatedLog.cpp" />
+    <ClCompile Include="..\src\server\ProposerState\ProposerCatchupState.cpp" />
+    <ClCompile Include="..\src\server\ProposerState\ProposerElectionState.cpp" />
+    <ClCompile Include="..\src\server\ProposerState\ProposerFollowerState.cpp" />
+    <ClCompile Include="..\src\server\ProposerState\ProposerLeaderState.cpp" />
+    <ClCompile Include="..\src\server\ProposerState\ProposerNotInGroupState.cpp" />
+    <ClCompile Include="..\src\server\ServerRequestHandler.cpp" />
+    <ClCompile Include="..\src\server\TcpConnection.cpp" />
+    <ClCompile Include="..\src\server\TransportModule.cpp" />
+    <ClCompile Include="..\src\tinyxml2\tinyxml2.cpp" />
+    <ClCompile Include="..\src\util\CharsetConv.cpp" />
+    <ClCompile Include="..\src\util\file_util.cpp" />
+    <ClCompile Include="..\src\util\md5cpp.cpp" />
+    <ClCompile Include="..\src\util\thread.cpp" />
+    <ClCompile Include="..\src\util\thread_local.cpp" />
+    <ClCompile Include="..\src\util\time_util.cpp" />
+    <ClCompile Include="..\src\util\util_function.cpp" />
+    <ClCompile Include="..\src\util\workerthread_pool.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\FakeServer.h" />
+    <ClInclude Include="..\src\glog\base\commandlineflags.h" />
+    <ClInclude Include="..\src\glog\base\googleinit.h" />
+    <ClInclude Include="..\src\glog\base\mutex.h" />
+    <ClInclude Include="..\src\glog\config.h" />
+    <ClInclude Include="..\src\glog\glog\logging.h" />
+    <ClInclude Include="..\src\glog\glog\log_severity.h" />
+    <ClInclude Include="..\src\glog\glog\raw_logging.h" />
+    <ClInclude Include="..\src\glog\glog\stl_logging.h" />
+    <ClInclude Include="..\src\glog\glog\vlog_is_on.h" />
+    <ClInclude Include="..\src\glog\port.h" />
+    <ClInclude Include="..\src\glog\utilities.h" />
+    <ClInclude Include="..\src\net\addr_util.h" />
+    <ClInclude Include="..\src\net\events_define.h" />
+    <ClInclude Include="..\src\net\event.h" />
+    <ClInclude Include="..\src\net\file_descriptor.h" />
+    <ClInclude Include="..\src\net\ioepoller.h" />
+    <ClInclude Include="..\src\net\ioeventhandler.h" />
+    <ClInclude Include="..\src\net\ioeventloop.h" />
+    <ClInclude Include="..\src\net\iomultiplexer.h" />
+    <ClInclude Include="..\src\net\ioselector.h" />
+    <ClInclude Include="..\src\net\tcpacceptor.h" />
+    <ClInclude Include="..\src\net\tcpconnector.h" />
+    <ClInclude Include="..\src\net\tcpeventhandler.h" />
+    <ClInclude Include="..\src\net\timerqueue.h" />
+    <ClInclude Include="..\src\net\pendingevent.h" />
+    <ClInclude Include="..\src\port\get_time.h" />
+    <ClInclude Include="..\src\port\linux_env.h" />
+    <ClInclude Include="..\src\port\pipe.h" />
+    <ClInclude Include="..\src\port\stdint.h" />
+    <ClInclude Include="..\src\port\winconfig.h" />
+    <ClInclude Include="..\src\port\windows_env.h" />
+    <ClInclude Include="..\src\port\winport.h" />
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorCatchupState.h" />
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorNormalState.h" />
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorNotInGroupState.h" />
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorState.h" />
+    <ClInclude Include="..\src\server\ClientRequest.h" />
+    <ClInclude Include="..\src\server\coding.h" />
+    <ClInclude Include="..\src\server\ConsensusModule.h" />
+    <ClInclude Include="..\src\server\DefaultLog\AcceptorFile.h" />
+    <ClInclude Include="..\src\server\DefaultLog\AcptrFileRcrdIter.h" />
+    <ClInclude Include="..\src\server\DefaultLog\DefaultPaxosLog.h" />
+    <ClInclude Include="..\src\server\DefaultLog\DefaultPaxosLogIterator.h" />
+    <ClInclude Include="..\src\server\DefaultLog\FileRecordIterator.h" />
+    <ClInclude Include="..\src\server\DefaultLog\IndexFile.h" />
+    <ClInclude Include="..\src\server\DefaultLog\IndexFileRcrdIter.h" />
+    <ClInclude Include="..\src\server\DefaultLog\IndexFileLogIterator.h" />
+    <ClInclude Include="..\src\server\DefaultLog\LogFile.h" />
+    <ClInclude Include="..\src\server\DefaultLog\LogFileRcrdIter.h" />
+    <ClInclude Include="..\src\server\DefaultLog\LogFileLogItertaor.h" />
+    <ClInclude Include="..\src\server\GlogHelper.h" />
+    <ClInclude Include="..\src\server\mempool\QueueLikeMemPool.h" />
+    <ClInclude Include="..\src\server\mempool\StackLikeMemPool.h" />
+    <ClInclude Include="..\src\server\NodeRequestManager.h" />
+    <ClInclude Include="..\src\server\OperationRetCode.h" />
+    <ClInclude Include="..\src\server\PaxosAcceptor.h" />
+    <ClInclude Include="..\src\server\PaxosAcceptorListener.h" />
+    <ClInclude Include="..\src\server\PaxosInnerState.h" />
+    <ClInclude Include="..\src\server\PaxosLearner.h" />
+    <ClInclude Include="..\src\server\PaxosLog.h" />
+    <ClInclude Include="..\src\server\PaxosLogCache.h" />
+    <ClInclude Include="..\src\server\PaxosLogIterator.h" />
+    <ClInclude Include="..\src\server\StorageModule.h" />
+    <ClInclude Include="..\src\server\PaxosMessage.h" />
+    <ClInclude Include="..\src\server\PaxosMessageTypeDefine.h" />
+    <ClInclude Include="..\src\server\PaxosProposer.h" />
+    <ClInclude Include="..\src\server\PaxosReplicatedLog.h" />
+    <ClInclude Include="..\src\server\PaxosReplicatedLogHandler.h" />
+    <ClInclude Include="..\src\server\PaxosValueTypeDefine.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerCatchupState.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerElectionState.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerFollowerState.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerLeaderState.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerNotInGroupState.h" />
+    <ClInclude Include="..\src\server\ProposerState\ProposerState.h" />
+    <ClInclude Include="..\src\server\ServerRequestHandler.h" />
+    <ClInclude Include="..\src\server\TcpConnection.h" />
+    <ClInclude Include="..\src\server\TransportModule.h" />
+    <ClInclude Include="..\src\tinyxml2\tinyxml2.h" />
+    <ClInclude Include="..\src\util\atomic.h" />
+    <ClInclude Include="..\src\util\basictypes.h" />
+    <ClInclude Include="..\src\util\buffer.h" />
+    <ClInclude Include="..\src\util\callback.h" />
+    <ClInclude Include="..\src\util\CharsetConv.h" />
+    <ClInclude Include="..\src\util\cond.h" />
+    <ClInclude Include="..\src\util\countdown_latch.h" />
+    <ClInclude Include="..\src\util\file_util.h" />
+    <ClInclude Include="..\src\util\lock.h" />
+    <ClInclude Include="..\src\util\md5cpp.h" />
+    <ClInclude Include="..\src\util\scoped_ptr.h" />
+    <ClInclude Include="..\src\util\thread.h" />
+    <ClInclude Include="..\src\util\thread_local.h" />
+    <ClInclude Include="..\src\util\time_util.h" />
+    <ClInclude Include="..\src\util\unique_ptr.h" />
+    <ClInclude Include="..\src\util\util_function.h" />
+    <ClInclude Include="..\src\util\workerthread_pool.h" />
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{643EFC1B-90A3-48C3-B4C1-41176F1E8853}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>Node2</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <UseOfMfc>Static</UseOfMfc>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>TurnOffAllWarnings</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>GLOG_NO_ABBREVIATED_SEVERITIES;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>../src;../src/glog;./</AdditionalIncludeDirectories>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalDependencies>ws2_32.lib;kernel32.lib;user32.lib;gdi32.lib;winspool.lib;comdlg32.lib;advapi32.lib;shell32.lib;ole32.lib;oleaut32.lib;uuid.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

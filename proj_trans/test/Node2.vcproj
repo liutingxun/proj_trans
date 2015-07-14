@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="gb2312"?>
+<VisualStudioProject 
+ProjectType="Visual C++" 
+Version="8.00" Name="Node2" ProjectGUID="{643EFC1B-90A3-48C3-B4C1-41176F1E8853}">
+<Platforms>
+<Platform Name="Win32"/>
+</Platforms>
+<ToolFiles/>
+<Configurations>
+<Configuration Name="Debug|Win32" OutputDirectory="$(SolutionDir)$(ConfigurationName)" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="1">
+<Tool Name="VCPreBuildEventTool"/>
+<Tool Name="VCCustomBuildTool"/>
+<Tool Name="VCXMLDataGeneratorTool"/>
+<Tool Name="VCWebServiceProxyGeneratorTool"/>
+<Tool Name="VCMIDLTool"/>
+<Tool Name="VCCLCompilerTool" Optimization="0" AdditionalIncludeDirectories="../src;../src/glog;./" PreprocessorDefinitions="GLOG_NO_ABBREVIATED_SEVERITIES;_SCL_SECURE_NO_WARNINGS;_CRT_SECURE_NO_WARNINGS;WIN32;_DEBUG;_CONSOLE;_LIB;" DebugInformationFormat="4"/>
+<Tool Name="VCManagedResourceCompilerTool"/>
+<Tool Name="VCResourceCompilerTool"/>
+<Tool Name="VCPreLinkEventTool"/>
+<Tool Name="VCLinkerTool" AdditionalDependencies="ws2_32.lib" GenerateDebugInformation="true"/>
+<Tool Name="VCALinkTool"/>
+<Tool Name="VCManifestTool"/>
+<Tool Name="VCXDCMakeTool"/>
+<Tool Name="VCBscMakeTool"/>
+<Tool Name="VCFxCopTool"/>
+<Tool Name="VCAppVerifierTool"/>
+<Tool Name="VCWebDeploymentTool"/>
+<Tool Name="VCPostBuildEventTool"/>
+</Configuration>
+<Configuration Name="Release|Win32" IntermediateDirectory="$(ConfigurationName)" ConfigurationType="1">
+<Tool Name="VCPreBuildEventTool"/>
+<Tool Name="VCCustomBuildTool"/>
+<Tool Name="VCXMLDataGeneratorTool"/>
+<Tool Name="VCWebServiceProxyGeneratorTool"/>
+<Tool Name="VCMIDLTool"/>
+<Tool Name="VCCLCompilerTool"/>
+<Tool Name="VCManagedResourceCompilerTool"/>
+<Tool Name="VCResourceCompilerTool"/>
+<Tool Name="VCPreLinkEventTool"/>
+<Tool Name="VCLinkerTool"/>
+<Tool Name="VCALinkTool"/>
+<Tool Name="VCManifestTool"/>
+<Tool Name="VCXDCMakeTool"/>
+<Tool Name="VCBscMakeTool"/>
+<Tool Name="VCFxCopTool"/>
+<Tool Name="VCAppVerifierTool"/>
+<Tool Name="VCWebDeploymentTool"/>
+<Tool Name="VCPostBuildEventTool"/>
+</Configuration>
+</Configurations>
+<References/>
+<Files>
+<Filter Name="src">
+<Filter Name="源文件">
+<Filter Name="client"/>
+<Filter Name="glog">
+<File RelativePath="..\src\glog\logging.cc"/>
+<File RelativePath="..\src\glog\port.cc"/>
+<File RelativePath="..\src\glog\raw_logging.cc"/>
+<File RelativePath="..\src\glog\utilities.cc"/>
+<File RelativePath="..\src\glog\vlog_is_on.cc"/>
+<File RelativePath="..\src\glog\port.h"/>
+<File RelativePath="..\src\glog\utilities.h"/>
+<File RelativePath="..\src\glog\base\commandlineflags.h"/>
+<File RelativePath="..\src\glog\base\googleinit.h"/>
+<File RelativePath="..\src\glog\base\mutex.h"/>
+<File RelativePath="..\src\glog\glog\logging.h"/>
+<File RelativePath="..\src\glog\glog\log_severity.h"/>
+<File RelativePath="..\src\glog\glog\raw_logging.h"/>
+<File RelativePath="..\src\glog\glog\stl_logging.h"/>
+<File RelativePath="..\src\glog\glog\vlog_is_on.h"/>
+<File RelativePath="..\src\glog\config.h"/>
+</Filter>
+<Filter Name="net">
+<Filter Name="multiplexer">
+<File RelativePath="..\src\net\ioepoller.cpp"/>
+<File RelativePath="..\src\net\ioselector.cpp"/>
+<File RelativePath="..\src\net\ioepoller.h"/>
+<File RelativePath="..\src\net\ioselector.h"/>
+<File RelativePath="..\src\net\iomultiplexer.h"/>
+</Filter>
+<File RelativePath="..\src\net\addr_util.cpp"/>
+<File RelativePath="..\src\net\file_descriptor.cpp"/>
+<File RelativePath="..\src\net\ioeventloop.cpp"/>
+<File RelativePath="..\src\net\tcpacceptor.cpp"/>
+<File RelativePath="..\src\net\tcpconnector.cpp"/>
+<File RelativePath="..\src\net\timerqueue.cpp"/>
+<File RelativePath="..\src\net\pendingevent.cpp"/>
+<File RelativePath="..\src\net\ioeventhandler.cpp"/>
+<File RelativePath="..\src\net\addr_util.h"/>
+<File RelativePath="..\src\net\file_descriptor.h"/>
+<File RelativePath="..\src\net\ioeventhandler.h"/>
+<File RelativePath="..\src\net\ioeventloop.h"/>
+<File RelativePath="..\src\net\tcpacceptor.h"/>
+<File RelativePath="..\src\net\tcpconnector.h"/>
+<File RelativePath="..\src\net\tcpeventhandler.h"/>
+<File RelativePath="..\src\net\timerqueue.h"/>
+<File RelativePath="..\src\net\pendingevent.h"/>
+<File RelativePath="..\src\net\event.h"/>
+<File RelativePath="..\src\net\events_define.h"/>
+</Filter>
+<Filter Name="port">
+<File RelativePath="..\src\port\pipe.cpp"/>
+<File RelativePath="..\src\port\windows_env.cpp"/>
+<File RelativePath="..\src\port\winport.cpp"/>
+<File RelativePath="..\src\port\get_time.h"/>
+<File RelativePath="..\src\port\linux_env.h"/>
+<File RelativePath="..\src\port\pipe.h"/>
+<File RelativePath="..\src\port\stdint.h"/>
+<File RelativePath="..\src\port\winconfig.h"/>
+<File RelativePath="..\src\port\windows_env.h"/>
+<File RelativePath="..\src\port\winport.h"/>
+</Filter>
+<Filter Name="util">
+<File RelativePath="..\src\util\CharsetConv.cpp"/>
+<File RelativePath="..\src\util\file_util.cpp"/>
+<File RelativePath="..\src\util\md5cpp.cpp"/>
+<File RelativePath="..\src\util\thread.cpp"/>
+<File RelativePath="..\src\util\thread_local.cpp"/>
+<File RelativePath="..\src\util\time_util.cpp"/>
+<File RelativePath="..\src\util\util_function.cpp"/>
+<File RelativePath="..\src\util\workerthread_pool.cpp"/>
+<File RelativePath="..\src\util\atomic.h"/>
+<File RelativePath="..\src\util\buffer.h"/>
+<File RelativePath="..\src\util\callback.h"/>
+<File RelativePath="..\src\util\CharsetConv.h"/>
+<File RelativePath="..\src\util\cond.h"/>
+<File RelativePath="..\src\util\countdown_latch.h"/>
+<File RelativePath="..\src\util\file_util.h"/>
+<File RelativePath="..\src\util\lock.h"/>
+<File RelativePath="..\src\util\md5cpp.h"/>
+<File RelativePath="..\src\util\scoped_ptr.h"/>
+<File RelativePath="..\src\util\thread.h"/>
+<File RelativePath="..\src\util\thread_local.h"/>
+<File RelativePath="..\src\util\time_util.h"/>
+<File RelativePath="..\src\util\unique_ptr.h"/>
+<File RelativePath="..\src\util\util_function.h"/>
+<File RelativePath="..\src\util\workerthread_pool.h"/>
+<File RelativePath="..\src\util\basictypes.h"/>
+</Filter>
+<Filter Name="server">
+<Filter Name="AcceptorState">
+<File RelativePath="..\src\server\AcceptorState\AcceptorNotInGroupState.cpp"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorState.cpp"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorCatchupState.cpp"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorNormalState.cpp"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorNormalState.h"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorNotInGroupState.h"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorState.h"/>
+<File RelativePath="..\src\server\AcceptorState\AcceptorCatchupState.h"/>
+</Filter>
+<Filter Name="DefaultLog">
+<File RelativePath="..\src\server\DefaultLog\IndexFile.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\LogFile.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\AcceptorFile.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\DefaultPaxosLog.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\DefaultPaxosLogIterator.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\LogFileLogItertaor.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\IndexFileLogIterator.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\IndexFileRcrdIter.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\AcptrFileRcrdIter.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\LogFileRcrdIter.cpp"/>
+<File RelativePath="..\src\server\DefaultLog\IndexFile.h"/>
+<File RelativePath="..\src\server\DefaultLog\LogFile.h"/>
+<File RelativePath="..\src\server\DefaultLog\AcceptorFile.h"/>
+<File RelativePath="..\src\server\DefaultLog\DefaultPaxosLog.h"/>
+<File RelativePath="..\src\server\DefaultLog\DefaultPaxosLogIterator.h"/>
+<File RelativePath="..\src\server\DefaultLog\IndexFileLogIterator.h"/>
+<File RelativePath="..\src\server\DefaultLog\LogFileLogItertaor.h"/>
+<File RelativePath="..\src\server\DefaultLog\FileRecordIterator.h"/>
+<File RelativePath="..\src\server\DefaultLog\IndexFileRcrdIter.h"/>
+<File RelativePath="..\src\server\DefaultLog\AcptrFileRcrdIter.h"/>
+<File RelativePath="..\src\server\DefaultLog\LogFileRcrdIter.h"/>
+</Filter>
+<Filter Name="mempool">
+<File RelativePath="..\src\server\mempool\QueueLikeMemPool.cpp"/>
+<File RelativePath="..\src\server\mempool\StackLikeMemPool.cpp"/>
+<File RelativePath="..\src\server\mempool\QueueLikeMemPool.h"/>
+<File RelativePath="..\src\server\mempool\StackLikeMemPool.h"/>
+</Filter>
+<Filter Name="ProposerState">
+<File RelativePath="..\src\server\ProposerState\ProposerElectionState.cpp"/>
+<File RelativePath="..\src\server\ProposerState\ProposerFollowerState.cpp"/>
+<File RelativePath="..\src\server\ProposerState\ProposerCatchupState.cpp"/>
+<File RelativePath="..\src\server\ProposerState\ProposerNotInGroupState.cpp"/>
+<File RelativePath="..\src\server\ProposerState\ProposerLeaderState.cpp"/>
+<File RelativePath="..\src\server\ProposerState\ProposerElectionState.h"/>
+<File RelativePath="..\src\server\ProposerState\ProposerFollowerState.h"/>
+<File RelativePath="..\src\server\ProposerState\ProposerCatchupState.h"/>
+<File RelativePath="..\src\server\ProposerState\ProposerNotInGroupState.h"/>
+<File RelativePath="..\src\server\ProposerState\ProposerState.h"/>
+<File RelativePath="..\src\server\ProposerState\ProposerLeaderState.h"/>
+</Filter>
+<File RelativePath="..\src\server\coding.cpp"/>
+<File RelativePath="..\src\server\PaxosAcceptor.cpp"/>
+<File RelativePath="..\src\server\PaxosInnerState.cpp"/>
+<File RelativePath="..\src\server\PaxosLearner.cpp"/>
+<File RelativePath="..\src\server\PaxosProposer.cpp"/>
+<File RelativePath="..\src\server\PaxosReplicatedLog.cpp"/>
+<File RelativePath="..\src\server\TcpConnection.cpp"/>
+<File RelativePath="..\src\server\GlogHelper.cpp"/>
+<File RelativePath="..\src\server\PaxosProposerClientRequest.cpp"/>
+<File RelativePath="..\src\server\ClientRequest.cpp"/>
+<File RelativePath="..\src\server\ServerRequestHandler.cpp"/>
+<File RelativePath="..\src\server\NodeRequestManager.cpp"/>
+<File RelativePath="..\src\server\TransportModule.cpp"/>
+<File RelativePath="..\src\server\StorageModule.cpp"/>
+<File RelativePath="..\src\server\ConsensusModule.cpp"/>
+<File RelativePath="..\src\server\coding.h"/>
+<File RelativePath="..\src\server\PaxosAcceptor.h"/>
+<File RelativePath="..\src\server\PaxosAcceptorListener.h"/>
+<File RelativePath="..\src\server\PaxosInnerState.h"/>
+<File RelativePath="..\src\server\PaxosLearner.h"/>
+<File RelativePath="..\src\server\PaxosMessage.h"/>
+<File RelativePath="..\src\server\PaxosProposer.h"/>
+<File RelativePath="..\src\server\PaxosReplicatedLog.h"/>
+<File RelativePath="..\src\server\TcpConnection.h"/>
+<File RelativePath="..\src\server\GlogHelper.h"/>
+<File RelativePath="..\src\server\PaxosLog.h"/>
+<File RelativePath="..\src\server\PaxosLogIterator.h"/>
+<File RelativePath="..\src\server\OperationRetCode.h"/>
+<File RelativePath="..\src\server\PaxosMessageTypeDefine.h"/>
+<File RelativePath="..\src\server\PaxosValueTypeDefine.h"/>
+<File RelativePath="..\src\server\PaxosLogCache.h"/>
+<File RelativePath="..\src\server\PaxosReplicatedLogHandler.h"/>
+<File RelativePath="..\src\server\ClientRequest.h"/>
+<File RelativePath="..\src\server\ServerRequestHandler.h"/>
+<File RelativePath="..\src\server\NodeRequestManager.h"/>
+<File RelativePath="..\src\server\TransportModule.h"/>
+<File RelativePath="..\src\server\StorageModule.h"/>
+<File RelativePath="..\src\server\ConsensusModule.h"/>
+</Filter>
+<File RelativePath="..\src\tinyxml2\tinyxml2.cpp"/>
+<File RelativePath="..\src\main.cpp"/>
+<File RelativePath="..\src\FakeServer.cpp"/>
+<File RelativePath="..\src\ReadMe.cpp"/>
+<File RelativePath="..\src\tinyxml2\tinyxml2.h"/>
+<File RelativePath="..\src\FakeServer.h"/>
+</Filter>
+<Filter Name="头文件"/>
+<Filter Name="资源文件"/>
+</Filter>
+</Files>
+</VisualStudioProject>

@@ -1,0 +1,543 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="源文件\client">
+      <UniqueIdentifier>{a391b9a6-6309-419c-8935-84097b5d8f9d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\glog">
+      <UniqueIdentifier>{ba0f11bf-b144-4a88-82e4-0adb24b2b435}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net">
+      <UniqueIdentifier>{2a195668-43b4-4879-a466-ac9e4191d252}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\port">
+      <UniqueIdentifier>{37e262ef-a8a9-484d-87b7-d461748c0ca6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\util">
+      <UniqueIdentifier>{0419b247-39ca-4ab6-b259-62c12b40b24b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server">
+      <UniqueIdentifier>{3c199eda-26a1-49c9-b3f1-ef648c6e9608}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server\AcceptorState">
+      <UniqueIdentifier>{5506219a-6667-4afa-be20-3a16f86a0c85}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server\DefaultLog">
+      <UniqueIdentifier>{5b49bff6-cbe5-4743-af9e-91f390be078b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server\mempool">
+      <UniqueIdentifier>{54737fdb-4dd5-495c-8843-bd26348b6d1e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\server\ProposerState">
+      <UniqueIdentifier>{ed0dd714-4fa1-449a-b309-f61ae7de1c60}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\net\multiplexer">
+      <UniqueIdentifier>{e38166d5-f910-4f36-b289-ad4036436093}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\src\glog\logging.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\glog\port.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\glog\raw_logging.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\glog\utilities.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\glog\vlog_is_on.cc">
+      <Filter>源文件\glog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\addr_util.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\file_descriptor.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\ioeventloop.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\tcpacceptor.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\tcpconnector.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\timerqueue.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\port\pipe.cpp">
+      <Filter>源文件\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\port\windows_env.cpp">
+      <Filter>源文件\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\port\winport.cpp">
+      <Filter>源文件\port</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\CharsetConv.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\file_util.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\md5cpp.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\thread.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\thread_local.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\time_util.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\util_function.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\util\workerthread_pool.cpp">
+      <Filter>源文件\util</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\tinyxml2\tinyxml2.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\coding.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosAcceptor.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosInnerState.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosLearner.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosProposer.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosReplicatedLog.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\TcpConnection.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\FakeServer.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ProposerState\ProposerElectionState.cpp">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ProposerState\ProposerFollowerState.cpp">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ProposerState\ProposerCatchupState.cpp">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\GlogHelper.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\PaxosProposerClientRequest.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\IndexFile.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\LogFile.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\AcceptorFile.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\DefaultPaxosLog.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\DefaultPaxosLogIterator.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\LogFileLogItertaor.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\IndexFileLogIterator.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\mempool\QueueLikeMemPool.cpp">
+      <Filter>源文件\server\mempool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\mempool\StackLikeMemPool.cpp">
+      <Filter>源文件\server\mempool</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ProposerState\ProposerNotInGroupState.cpp">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ClientRequest.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ServerRequestHandler.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\pendingevent.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\NodeRequestManager.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorNotInGroupState.cpp">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorState.cpp">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorCatchupState.cpp">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\AcceptorState\AcceptorNormalState.cpp">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\ReadMe.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\ioeventhandler.cpp">
+      <Filter>源文件\net</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\ioepoller.cpp">
+      <Filter>源文件\net\multiplexer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\net\ioselector.cpp">
+      <Filter>源文件\net\multiplexer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\IndexFileRcrdIter.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\AcptrFileRcrdIter.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\DefaultLog\LogFileRcrdIter.cpp">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ProposerState\ProposerLeaderState.cpp">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\TransportModule.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\StorageModule.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+    <ClCompile Include="..\src\server\ConsensusModule.cpp">
+      <Filter>源文件\server</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\src\glog\port.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\utilities.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\base\commandlineflags.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\base\googleinit.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\base\mutex.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\glog\logging.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\glog\log_severity.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\glog\raw_logging.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\glog\stl_logging.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\glog\vlog_is_on.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\glog\config.h">
+      <Filter>源文件\glog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\addr_util.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\file_descriptor.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\ioeventhandler.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\ioeventloop.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\tcpacceptor.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\tcpconnector.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\tcpeventhandler.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\timerqueue.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\get_time.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\linux_env.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\pipe.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\stdint.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\winconfig.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\windows_env.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\port\winport.h">
+      <Filter>源文件\port</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\atomic.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\buffer.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\callback.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\CharsetConv.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\cond.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\countdown_latch.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\file_util.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\lock.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\md5cpp.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\scoped_ptr.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\thread.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\thread_local.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\time_util.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\unique_ptr.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\util_function.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\workerthread_pool.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\tinyxml2\tinyxml2.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\coding.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosAcceptor.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosAcceptorListener.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosInnerState.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosLearner.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosMessage.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosProposer.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosReplicatedLog.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\TcpConnection.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\FakeServer.h">
+      <Filter>源文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerElectionState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerFollowerState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerCatchupState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\util\basictypes.h">
+      <Filter>源文件\util</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\GlogHelper.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\IndexFile.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\LogFile.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\AcceptorFile.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosLog.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosLogIterator.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\DefaultPaxosLog.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\DefaultPaxosLogIterator.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\IndexFileLogIterator.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\LogFileLogItertaor.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\mempool\QueueLikeMemPool.h">
+      <Filter>源文件\server\mempool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\mempool\StackLikeMemPool.h">
+      <Filter>源文件\server\mempool</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\OperationRetCode.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosMessageTypeDefine.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosValueTypeDefine.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosLogCache.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\PaxosReplicatedLogHandler.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerNotInGroupState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ClientRequest.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ServerRequestHandler.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\pendingevent.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\event.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\NodeRequestManager.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorNormalState.h">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorNotInGroupState.h">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorState.h">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\AcceptorState\AcceptorCatchupState.h">
+      <Filter>源文件\server\AcceptorState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\events_define.h">
+      <Filter>源文件\net</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\ioepoller.h">
+      <Filter>源文件\net\multiplexer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\ioselector.h">
+      <Filter>源文件\net\multiplexer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\net\iomultiplexer.h">
+      <Filter>源文件\net\multiplexer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\FileRecordIterator.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\IndexFileRcrdIter.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\AcptrFileRcrdIter.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\DefaultLog\LogFileRcrdIter.h">
+      <Filter>源文件\server\DefaultLog</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ProposerState\ProposerLeaderState.h">
+      <Filter>源文件\server\ProposerState</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\TransportModule.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\StorageModule.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+    <ClInclude Include="..\src\server\ConsensusModule.h">
+      <Filter>源文件\server</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
